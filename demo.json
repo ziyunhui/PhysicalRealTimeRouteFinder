@@ -1,0 +1,21 @@
+坐标系:z轴朝上
+{
+    "DataType":"Map",//数据种类 Map地图数据
+    "Map":[[0,1,2,1],[2,2,3,1]]
+    //地图数据，数组内每个元素为一个block，[double x,double y,double z,int type] type参数为方块类型，目前只有1为实体方块
+}
+
+{
+    "DataType":"Frame",//数据种类 Frame计算数据帧
+    "Info":{
+        "FrameNumber":0,//帧编号 int
+        "RunTime":123456,//程序运算总时间 long
+        "FrameCalculateTime":12345,//帧计算时间 long
+    },
+    "Route":[[1,2,3],[3,4,5]],//路径标记(可以用特效也可以半透明方块)同地图数据，[double x,double y,double z]
+    "Entity":{
+        "Position":[0,1,1],//实体方块位置(立方体底面中心为坐标原点) [double x,double y,double z]
+        "BoundingBox":[1,1,1],//碰撞箱大小(立方体大小) [double x,double y,double z]
+        "Rotation":[30,30]//[double pitch,double yaw] pitch为与z轴正方向的夹角(0-180)，yaw为与x轴正方向夹角(0-360)卦限顺序
+    }
+}
