@@ -1,9 +1,9 @@
 dependency-reduced-pom.xml
-target/
+./target/
 
 logs
 *.log
 
-.vscode/
-.settings/
+./.vscode/
+./.settings/
 .prettierrc
